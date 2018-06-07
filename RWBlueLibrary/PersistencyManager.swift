@@ -11,7 +11,15 @@ import UIKit
 
 final class PersistencyManager {
   private var albums = [Album]()
+
+  private var documents: URL {
+    return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+  }
   
+//  private enum Filename {
+//    static let Albums =
+  //  } // TODO : Finish implementing this enum
+ 
   init() {
     //Dummy list of albums
     let album1 = Album(title: "Best of Bowie",
@@ -85,6 +93,7 @@ final class PersistencyManager {
     }
     return UIImage(data: data)
   }
+  
 }
 
 
