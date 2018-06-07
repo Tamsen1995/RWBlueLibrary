@@ -11,6 +11,7 @@
 		6737514320C825AD002CC58F /* HorizontalScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6737514220C825AD002CC58F /* HorizontalScrollerView.swift */; };
 		67CF3A6C20C7EA3900E870D5 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF3A6B20C7EA3900E870D5 /* LibraryAPI.swift */; };
 		67CF3A6E20C7EB6C00E870D5 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF3A6D20C7EB6C00E870D5 /* PersistencyManager.swift */; };
+		67D4550420C980DB000C8608 /* albums.json in Resources */ = {isa = PBXBuildFile; fileRef = 67D4550320C980DB000C8608 /* albums.json */; };
 		79F6FC411F14251800E22ED5 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6FC401F14251800E22ED5 /* Album.swift */; };
 		79F6FC431F14254E00E22ED5 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6FC421F14254E00E22ED5 /* AlbumView.swift */; };
 		EDDF66161EBD28EF006123DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDF66151EBD28EF006123DA /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		6737514220C825AD002CC58F /* HorizontalScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollerView.swift; sourceTree = "<group>"; };
 		67CF3A6B20C7EA3900E870D5 /* LibraryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
 		67CF3A6D20C7EB6C00E870D5 /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
+		67D4550320C980DB000C8608 /* albums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = albums.json; sourceTree = "<group>"; };
 		79F6FC401F14251800E22ED5 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		79F6FC421F14254E00E22ED5 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		EDDF66121EBD28EF006123DA /* RWBlueLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWBlueLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 		67CF3A6A20C7E8AB00E870D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				67D4550320C980DB000C8608 /* albums.json */,
 				79F6FC401F14251800E22ED5 /* Album.swift */,
 			);
 			name = Model;
@@ -190,6 +193,7 @@
 				EDDF66201EBD28EF006123DA /* LaunchScreen.storyboard in Resources */,
 				EDDF661D1EBD28EF006123DA /* Assets.xcassets in Resources */,
 				EDDF661B1EBD28EF006123DA /* Main.storyboard in Resources */,
+				67D4550420C980DB000C8608 /* albums.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
