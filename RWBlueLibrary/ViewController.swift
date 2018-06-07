@@ -34,6 +34,7 @@ final class ViewController: UIViewController {
   
   private enum Constants {
     static let CellIfentifier = "Cell"
+    static let IndexRestorationKey = "currentAlbumIndex"
   }
   
   
@@ -59,6 +60,24 @@ final class ViewController: UIViewController {
     
     showDataForAlbum(at: currentAlbumIndex)
   }
+  
+  override func encodeRestorableState(with coder: NSCoder) {
+    coder.encode(currentAlbumIndex, forKey: Constants.IndexRestorationKey)
+    super.encodeRestorableState(with: coder)
+  }
+  
+  override func decodeRestorableState(with coder: NSCoder) {
+    super.decodeRestorableState(with: coder)
+    currentAlbumIndex = coder.decodeInteger(forKey: Constants.IndexRestorationKey)
+    showDataForAlbum(at: currentAlbumIndex)
+    horizontalScrollerView.reload()
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    horizontalScrollerView.scrollToView(at: currentAlbumIndex, animated: false)
+  }
+  
   
   private func showDataForAlbum(at index: Int) {
     if (index < allAlbums.count && index > -1) {
